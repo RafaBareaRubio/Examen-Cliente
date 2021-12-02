@@ -382,3 +382,63 @@ ul.slider li:target {
     background-position: center center;
 }
 
+
+/* FOOTER */
+
+hr{
+    margin-top: 5%;
+    max-width: 90%;
+    margin-left: 5%;
+    border-top:  #253243 1px solid;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.menuFooter{
+
+    margin-top: 2%;
+}
+
+.menuFooter a{
+    text-decoration:none;
+    color: black;
+    font-size: 0.8em;
+}
+
+.menuFooter ul{
+    width: 100%;
+    margin-left:5%;
+    margin-top: -1%;
+    gap: 6em;
+    display: flex;
+}
+
+.menuFooter li{
+    margin-left: 9%;
+    list-style: none;
+}
+
+.fotoinsta{
+    position: absolute;
+    margin-top: 0.9%;
+    text-align: right;
+    margin-left: 84%;
+    max-width: 2em;
+}
+
+.insta{
+    position: absolute;
+    margin-top: 1.2%;
+    margin-left: 86%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+
+.footLogo{
+    margin-top: -1%;
+    margin-left: 5%;
+}
