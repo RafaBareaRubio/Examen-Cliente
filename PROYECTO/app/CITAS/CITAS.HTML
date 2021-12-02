@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/citas.css">
+    <title>CITAS</title>
+</head>
+<body>
+
+<!-- MENU -->
+
+<header>      
+    <div class="menu">
+        <h1>LA CREACI&#211;N</h1>
+        <p class="subTitulo">BEUTY CONCEPT</p>
+        <a href="../../index.html"><img class="logo" src="../../images/INDEX/LOGO.png"></a>
+        <button class="iniciarS"><a href="../Iniciar Sesion.html">INICIAR SESION</a></button>
+        <!-- REDIRECCIONES DENTRO DE LA PAGINA -->
+        <nav class="submenu">
+            <ul>
+                <li><a href="../Servicios.html">SERVICIOS</a></li>
+                <li><a href="../RITUALES.html">RITUALES</a></li>
+                <li><a href="../PRODUCTOS.html">PRODUCTOS</a></li>
+                <li><a href="../NOSOTROS.html">SOBRE NOSOTROS</a></li>
+                <li><a href="../HISTORIA.html">NUESTRA HISTORIA</a></li>
+            </ul>
+        </nav>
+        <br>
+    </div>
+</header> 
+
+<article>
+    <h2>CORTE</h2>
+    <div class="tP">
+        <button class="pT">25 min</button>
+        <button class="pT">10 €</button>
+    </div>
+</article>
+
+
+
+<!-- HISTORIA -->
+<!-- Vamos a evitar usar JavaScript de momento usando esto para ir cambiando de foto -->
+<article>
+    <hr>
+    <h2 id="HISTORIA">PELUQUERO</h2>
+    <div class="contenidoH">
+        <ul class="slider">
+            <li id="slide1">
+                <img src="../../images/TRABAJADORES/trabajador1.png">
+            </li>
+            <li id="slide2">
+                <img src="../../images/TRABAJADORES/trabajador2.png">
+            </li>
+        </ul>
+
+        <ul class="enlaces">
+            <li>
+              <a class="cambiaFoto" href="#slide1">1</a>
+            </li>
+            <li>
+              <a class="cambiaFoto" href="#slide2">2</a>
+            </li>
+          </ul>
+    </div>
+</article>
+
+<!-- ESCOGER DIA -->
+
+<article>
+    <h2>FECHA <br><input type="date" name="fecha" required></h2>
+</article>
+
+<!-- ESCOGER HORA -->
+
+<article>
+    <div class="select">
+        <select name="format" id="format">
+           <option selected disabled>Seleccione la hora</option>
+           <option value="9:00">9:00</option>
+           <option value="9:30">9:30</option>
+           <option value="10:30">10:30</option>
+           <option value="11:00">11:00</option>
+           <option value="11:30">11:30</option>
+           <option value="12:00">12:00</option>
+           <option value="12:30">12:30</option>
+           <option value="13:00">13:00</option>
+           <option value="13:30">13:30</option>
+           <option value="17:30">17:30</option>
+           <option value="18:00">18:00</option>
+           <option value="18:30">18:30</option>
+           <option value="19:00">19:00</option>
+           <option value="19:30">19:30</option>
+           <option value="20:00">20:00</option>
+        </select>
+     </div>  
+
+    <a href="CitaConfirmada.html"><button type="submit" class="confirmar">CONFIRMAR CITA</button></a>
+    <br>
+    <!-- Si no ha iniciado sesion -->
+    <!-- <a href="../Iniciar Sesion.html"><button type="submit">CONFIRMAR CITA Sin iniciar sesion</button></a> -->
+</article>
+
+
+
+
+<footer>
+    <hr>
+    <br>
+    <div class="content">
+        <a class="footLogo" href="../../index.html"><img src="../../images/INDEX/LOGO.png" height="100" width="230"></a>
+        <nav class="menuFooter">
+                <ul>
+                    <li><a href="../../index.html#SERVICIOS">SERVICIOS</a></li>
+                    <li><a href="../../index.html#RITUALES">RITUALES</a></li>
+                    <li><a href="../../index.html#PRODUCTOS">PRODUCTOS</a></li>
+                    <li><a href="../../index.html#NOSOTROS">SOBRE NOSOTROS</a></li>
+                    <li><a href="../../index.html#HISTORIA">NUESTRA HISTORIA</a></li>
+                </ul>
+        </nav>
+        <a class="fotoinsta" href="https://www.instagram.com/lacreacionbeauty/"><img src="../../images/INDEX/instagram.png" height="40" width="40"></a>
+        <a class="insta" href="https://www.instagram.com/lacreacionbeauty/">@Lacreacionbeauty</a>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>

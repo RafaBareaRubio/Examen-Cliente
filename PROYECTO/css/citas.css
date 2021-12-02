@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@100&display=swap');
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+/* MENU */
+
+.menu{
+    background-color: #253243;
+} 
+
+h1{
+    text-align: center;
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 2.7em;
+
+}
+
+.subTitulo{
+    line-height: 0;
+    text-align: center;
+    color: #c98f40;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+.logo{
+    margin-left: 2%;
+    margin-top: -2.5%;
+    height: 10%;
+    width: 10%;
+}
+/* iniciar sesion */
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover a{
+    text-decoration: none;
+    color:  #c98f40;
+}
+
+.iniciarS{
+    font-size: 0.8em;
+    margin-right: 2%;
+    float: right;
+    margin-top: -2.5%;
+    height: 6%;
+    width: 5%;
+    border: solid black 1px;
+    background-image: linear-gradient(#c98f40, rgb(231, 196, 131));
+    border-radius: 20PX;
+}
+
+.iniciarS:hover{
+    color: #c98f40;
+    font-size: 0.8em;
+    margin-right: 2%;
+    float: right;
+    margin-top: -2.5%;
+    height: 6%;
+    width: 5%;
+    border: solid white 1px;
+    background-image: linear-gradient(#d3b68d,white);
+    border-radius: 25PX;
+}
+
+
+/* SUBMENU */
+.submenu a{
+    text-decoration:none;
+    color: white;
+    font-size: 0.8em;
+}
+
+.submenu ul{
+    margin-left: 5%;
+    margin-top: -1%;
+    display: flex;
+    color: white;
+}
+
+.submenu li{
+    margin-left: 12.65%;
+    list-style: none;
+}
+/* CITAS */
+
+h2{
+    text-align: center;
+}
+
+.tP{
+    text-align: center;
+    margin-left: 40.1%;
+    display: flex;
+    gap: 10em;
+    
+}
+.pT{
+    color: whitesmoke;
+    border-radius: 20em;
+    width: 8em;
+    height: 3em;
+    background-color: #5c6664;;
+
+}
+
+
+/* ELEGIR EMPLEADO */
+
+.contenidoH{
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+  
+ul.slider li img{
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border: solid black 1px;
+    
+}
+ 
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+  
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+  
+.enlaces{
+    text-align: center;
+    margin: 20px;
+}
+  
+.enlaces li{
+    display: inline-block;
+    text-align: center;
+}
+  
+.enlaces li .cambiaFoto{
+    margin-top: 10em;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #5c6664;;
+    border: 1px black solid;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.enlaces li:visited .cambiaFoto{
+    margin-top: 10em;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #078f74;;
+    border: 1px black solid;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.enlaces li:active .cambiaFoto{
+    margin-top: 10em;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #078f74;
+    border: 1px black solid;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* DIA */
+input[type="date"]{
+    margin-top: 2%;
+    position: absolute;
+    background-color: #5c6664;;
+    padding: 1em;
+    transform: translate(-50%,-50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    border: solid 1px black;
+    outline: none;
+    border-radius: 20em;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color:#2b2e2e;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* HORA */
+
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: .25em;
+    text-align: center;
+
+ }
+ select::-ms-expand {
+    display: none;
+    border-radius: .25em;
+ }
+ .select {
+     border: solid 1px black;
+    margin-top: 6%;
+    margin-left: 41.5%;
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+    text-align: center;
+
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+    border-radius: .25em;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+
+
+
+.confirmar{
+    margin-top: 5%;
+    color: whitesmoke;
+    border-radius: 20em;
+    width: 10em;
+    height: 2.3em;
+    background-color: #294943;
+    margin-left: 43%;
+    font-size: 1.7em;
+}
+
+.confirmar:hover{
+    color: whitesmoke;
+    border-radius: 20em;
+    width: 10em;
+    height: 2.3em;
+    background-color: #172925;
+    margin-left: 43%;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+hr{
+    margin-top: 5%;
+    max-width: 90%;
+    margin-left: 5%;
+    border-top:  #253243 1px solid;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.menuFooter{
+
+    margin-top: 2%;
+}
+
+.menuFooter a{
+    text-decoration:none;
+    color: black;
+    font-size: 0.8em;
+}
+
+.menuFooter ul{
+    width: 100%;
+    margin-left:5%;
+    margin-top: -1%;
+    gap: 6em;
+    display: flex;
+}
+
+.menuFooter li{
+    margin-left: 9%;
+    list-style: none;
+}
+
+.fotoinsta{
+    position: absolute;
+    margin-top: 0.9%;
+    text-align: right;
+    margin-left: 84%;
+    max-width: 2em;
+}
+
+.insta{
+    position: absolute;
+    margin-top: 1.2%;
+    margin-left: 86%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+
+.footLogo{
+    margin-top: -1%;
+    margin-left: 5%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sesion.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <div class="bloque">
+        <a href="../index.html"><img class="logo" src="../images/INDEX/LOGO.png"></a>
+        <div class="bloque2">
+            <h2>LA CREACI&#211;N</h2>
+            <p>BEUTY CONCEPT</p>
+            <img class="foto" src="../images/INDEX/IniciarS.jpg"></div>
+        <div name="formulario" id="formulario" class="datos">
+            <!-- Validar con la base de datos si coincide el usuario y la contraseña. ESTARIA REGISTRADO -->
+            <form method="get" action="../index.html">
+                <table>
+                    <tr>
+                        <th>Nombre:</th>
+                        <td><input type="text" id="nombre" required/></td>
+                    </tr>
+                    <tr>
+                        <th>Contrase&ntilde;a:</th>
+                        <td><input type="password" id="contra" required></td>
+                        <td><button type="button" onclick="mostrar()"><img src="../images/INDEX/ojo.png"></button></td>
+                    </tr>
+                </table>    
+                <br/>
+                <input class="boton" type="submit" value="INICIAR SESION">
+                <br>
+                <div id="errores" class="errores"></div>
+                <br><br>
+                <a href="Registrarse.html">Registrate</a>
+            </form>
+        </div>
+    </div>
+    <script src="../JavaScript/RegistroUsuarios.js"></script>
+    <script src="../JavaScript/mostrarContra.js"></script>
+</body>
+</html>
